@@ -332,8 +332,6 @@ class SendMoneyRequest(BaseModel):
     "/collect-money",
     response_model=CollectionResponse,
     status_code=status.HTTP_201_CREATED,
-    summary="Create a new collection request",
-    description="Initiate a mobile money collection from a customer"
 )
 async def create_collection(
     collection: CollectionRequest,
@@ -384,8 +382,6 @@ async def create_collection(
 
 @app.get(
     "/collect-money/{collection_uuid}",
-    summary="Get collection details",
-    description="Retrieve the status and details of a specific collection"
 )
 async def get_collection(
     collection_uuid: str,
