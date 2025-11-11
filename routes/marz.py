@@ -83,7 +83,7 @@ class CollectionRequest(BaseModel):
             "examples": [
                 {
                     "phone_number": "0700000000",
-                    "amount": 1000,
+                    "amount": 500,
                     "country": "UG",
                     "reference": uuid.uuid4(),
                     "description": "Payment for services",
